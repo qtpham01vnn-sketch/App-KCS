@@ -1,0 +1,32 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "cSpell.words": [
+    "lucide",
+    "supabase",
+    "Phuong",
+    "Nam",
+    "HMI",
+    "KCS"
+  ],
+  "todo-tree.highlights.defaultHighlight": {
+    "type": "text",
+    "foreground": "white",
+    "background": "red",
+    "icon": "check",
+    "gutterIcon": true
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^'\"`]*)(?:'|\"|`)"]
+  ],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  "errorLens.excludeBySource": ["cSpell"],
+  "errorLens.fontStyleItalic": true,
+  "color-highlight.markerType": "dot-before",
+  "pretty-ts-errors.showExpandButton": true
+}

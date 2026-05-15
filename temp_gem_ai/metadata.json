@@ -1,0 +1,8 @@
+{
+  "name": "Gem_AI - Gạch Men Phương Nam",
+  "description": "Chuyên gia tư vấn gạch men và nội thất cao cấp của Gạch Men Phương Nam (pnc.net.vn). Tính toán gạch, tư vấn phong thủy và thiết kế không gian chuyên nghiệp.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}

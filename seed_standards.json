@@ -1,0 +1,35 @@
+[
+  {
+    "product_type": "CERAMIC ốp 40X80",
+    "category": "PREP",
+    "standards": {
+      "metrics": [
+        { "name": "tyTrong", "label": "Tỷ trọng hồ", "target": 1.70, "unit": "g/l" },
+        { "name": "doNhot", "label": "Độ nhớt", "target": 35, "unit": "s" },
+        { "name": "sotSang", "label": "Sót sàng", "target": 6.5, "unit": "%" }
+      ]
+    }
+  },
+  {
+    "product_type": "CERAMIC ốp 40X80",
+    "category": "DRYER",
+    "standards": {
+      "metrics": [
+        { "name": "cuongDo", "label": "Cường độ sấy", "target": 45, "unit": "kg/cm2" },
+        { "name": "doAm", "label": "Độ ẩm mộc", "target": 0.3, "unit": "%" }
+      ]
+    }
+  },
+  {
+    "product_type": "CERAMIC ốp 40X80",
+    "category": "KCS",
+    "standards": {
+      "metrics": [
+        { "name": "lucBe", "label": "Lực bẻ thực tế", "target": 2500, "unit": "N" },
+        { "name": "benUon", "label": "Bền uốn", "target": 35, "unit": "N/mm2" },
+        { "name": "hutNuoc", "label": "Độ hút nước", "target": 0.5, "unit": "%" },
+        { "name": "doDay", "label": "Độ dày gạch", "target": 10.5, "unit": "mm" }
+      ]
+    }
+  }
+]

@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #0ea5e9;
+  --color-brand-bg: #020617;
+  --color-brand-card: #0f172a;
+  --color-brand-border: #1e293b;
+}
+
+/* Global Reset */
+body {
+  background-color: var(--color-brand-bg);
+  color: white;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Lightweight Card System - NO BLUR, NO HEAVY SHADOWS */
+.glass-card {
+  background-color: var(--color-brand-card);
+  border: 1px solid var(--color-brand-border);
+}
+
+.glass-btn {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  transition: all 0.2s ease;
+}
+
+.glass-btn:hover {
+  background-color: #334155;
+  border-color: var(--color-brand-primary);
+}
+
+/* Scrollbar Optimization */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+/* Tech Gradient Text - Simple */
+.tech-gradient {
+  background: linear-gradient(to right, #0ea5e9, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Active Menu Glow - Minimal */
+.active-glow {
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.1);
+}
+
+/* Remove all heavy animations */
+* {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Only keep essential hover transitions */
+.hover-transition {
+  transition: background-color 0.15s ease !important;
+}

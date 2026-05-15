@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker",
+    "gruntfuggly.todo-tree",
+    "bradlc.vscode-tailwindcss",
+    "christian-kohler.path-intellisense",
+    "formulahendry.auto-rename-tag",
+    "yoavbls.pretty-ts-errors",
+    "naumovs.color-highlight",
+    "usernamehw.errorlens",
+    "alefragnani.project-manager",
+    "mhutchie.git-graph",
+    "sonarsource.sonarlint-vscode",
+    "dsznajder.es7-react-js-snippets",
+    "AykutSarac.jsoncrack-vscode",
+    "simonsiefke.svg-preview",
+    "shd101wyy.markdown-preview-enhanced",
+    "cweijan.vscode-office"
+  ]
+}
