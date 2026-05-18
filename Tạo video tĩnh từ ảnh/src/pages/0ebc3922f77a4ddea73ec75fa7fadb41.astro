@@ -1,0 +1,76 @@
+---
+---
+
+<html><head /><body># Memories App Project Export
+
+This document contains the complete technical foundation for the **Memories** app, including the design system and links to all generated screens.
+
+## 1. Design System (Luminous Keepsake)
+
+The app uses a warm, nostalgic, and premium visual language.
+
+### Design Tokens (DESIGN.md)
+
+```markdown
+---
+name: Luminous Keepsake
+colors:
+  surface: '#fcf9f8'
+  surface-dim: '#dcd9d9'
+  surface-bright: '#fcf9f8'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f6f3f2'
+  surface-container: '#f1eded'
+  surface-container-high: '#ebe7e7'
+  surface-container-highest: '#e5e1e1'
+  on-surface: '#1c1b1b'
+  on-surface-variant: '#444748'
+  outline: '#747878'
+  outline-variant: '#c4c7c8'
+  primary: '#c5a391'
+  on-primary: '#ffffff'
+  primary-container: '#e9d6cb'
+  on-primary-container: '#231a15'
+  secondary: '#625d5a'
+  on-secondary: '#ffffff'
+  secondary-container: '#e9e1dd'
+  on-secondary-container: '#1e1b19'
+  tertiary: '#5e6054'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#e4e6d7'
+  on-tertiary-container: '#1b1d12'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#410002'
+typography:
+  display: Playfair Display, serif
+  headline: Playfair Display, serif
+  body: Lato, sans-serif
+  label: Lato, sans-serif
+roundness: 8px
+---
+```
+
+## 2. Screens Inventory
+
+Here are the screens designed for the Memories app. You can access the full HTML/CSS for each by selecting them on the canvas.
+
+### Onboarding Flow
+- **Step 1:** {'{'}{DATA:SCREEN:SCREEN_4}{'}'} - Curate Your Moments
+- **Step 2:** {'{'}{DATA:SCREEN:SCREEN_13}{'}'} - Choose Your Style
+- **Step 3:** {'{'}{DATA:SCREEN:SCREEN_11}{'}'} - Add Soul with Music
+- **Step 4:** {'{'}{DATA:SCREEN:SCREEN_6}{'}'} - Share the Magic
+
+### Main Experience
+- **Home:** {'{'}{DATA:SCREEN:SCREEN_12}{'}'} - Recent Stories &amp; Featured Albums
+- **Creation:** {'{'}{DATA:SCREEN:SCREEN_10}{'}'} - Photo Selection
+- **Processing:** {'{'}{DATA:SCREEN:SCREEN_2}{'}'} - AI Analysis &amp; Rendering
+- **Viewing:** {'{'}{DATA:SCREEN:SCREEN_9}{'}'} - 3D Flip Album Player
+- **Profile:** {'{'}{DATA:SCREEN:SCREEN_7}{'}'} - Personal Library &amp; Saved Albums
+
+## 3. How to use this code
+1. **Design System:** Use the DESIGN.md content to set up your Tailwind configuration or CSS variables.
+2. **Components:** The screens use a modular approach. You can extract shared components like the `TopAppBar` and `BottomNavBar` from the HTML source.
+3. **Assets:** All images used are high-quality placeholders. Replace them with your own asset paths during development.
+</body></html>
