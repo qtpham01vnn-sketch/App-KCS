@@ -147,7 +147,11 @@ export default function WorkspacePage() {
 
       ffmpeg.on('progress', ({ progress }) => {
         setRenderProgress(Math.round(progress * 100));
-        setRenderStatus("Đang Render MP4...");
+        setRenderStatus("Đang Render MP4 (Có thể mất 1-2 phút)...");
+      });
+
+      ffmpeg.on('log', ({ message }) => {
+        console.log('FFmpeg:', message);
       });
 
       if (!ffmpeg.loaded) {
@@ -171,12 +175,15 @@ export default function WorkspacePage() {
       
       await ffmpeg.exec([
         '-loop', '1', 
+        '-framerate', '30',
         '-i', 'image.jpg', 
         '-i', 'audio.mp3', 
         '-c:v', 'libx264', 
+        '-preset', 'ultrafast',
         '-tune', 'stillimage', 
+        '-vf', 'scale=720:-2',
         '-c:a', 'aac', 
-        '-b:a', '192k', 
+        '-b:a', '128k', 
         '-pix_fmt', 'yuv420p', 
         '-shortest', 
         'out.mp4'
@@ -378,7 +385,7 @@ export default function WorkspacePage() {
                     <path className="opacity-75 text-[#4edea3]" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-sm">
-                    {renderProgress}%
+                    {renderProgress > 0 ? `${renderProgress}%` : '...'}
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2 tracking-wide">Rendering Video...</h3>
