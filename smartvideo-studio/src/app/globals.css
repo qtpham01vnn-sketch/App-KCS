@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Cinematic Pro Studio Design Tokens */
+    --color-surface: #131315;
+    --color-surface-dim: #131315;
+    --color-surface-bright: #39393b;
+    --color-surface-container-lowest: #0e0e10;
+    --color-surface-container-low: #1c1b1d;
+    --color-surface-container: #201f22;
+    --color-surface-container-high: #2a2a2c;
+    --color-surface-container-highest: #353437;
+    --color-surface-base: #18181b;
+    --color-surface-elevated: #27272a;
+    --color-on-surface: #e5e1e4;
+    --color-on-surface-variant: #bbcabf;
+    --color-background: #131315;
+    --color-on-background: #e5e1e4;
+    --color-primary: #4edea3;
+    --color-on-primary: #003824;
+    --color-primary-container: #10b981;
+    --color-secondary: #4cd7f6;
+    --color-on-secondary: #003640;
+    --color-tertiary: #d0bcff;
+    --color-ai-accent: #8b5cf6;
+    --color-error: #ffb4ab;
+    --color-on-error: #690005;
+    --color-outline: #86948a;
+    --color-outline-variant: #3c4a42;
+    --color-text-muted: #a1a1aa;
+    --color-border-subtle: #3f3f46;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    font-family: var(--font-geist-sans), system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-surface-container-lowest);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border-subtle);
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
+    color: var(--color-primary);
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background: rgba(24, 24, 27, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(63, 63, 70, 0.5);
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 15px rgba(78, 222, 163, 0.3);
+  }
+
+  .glow-cyan:focus {
+    box-shadow: 0 0 10px rgba(76, 215, 246, 0.3);
+    border-color: var(--color-secondary);
+  }
+
+  .ai-border {
+    border-top: 2px solid var(--color-ai-accent);
+  }
+}
+
+@layer utilities {
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 0.3; transform: scale(1); filter: blur(40px); }
+    50% { opacity: 0.6; transform: scale(1.1); filter: blur(60px); }
+  }
+  .animate-pulse-glow {
+    animation: pulse-glow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
